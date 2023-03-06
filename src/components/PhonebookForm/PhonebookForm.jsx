@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import PropTypes from 'prop-types';
+
 import css from '../Phonebook/Phonebook.module.css';
 
 const PhonebookForm = ({ onSubmit }) => {
@@ -60,3 +62,7 @@ const PhonebookForm = ({ onSubmit }) => {
 };
 
 export default PhonebookForm;
+
+PhonebookForm.propTypes = {
+  onSubmit: PropTypes.func,
+};
